@@ -7,9 +7,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
 
-/**
- * Created by infuntis on 15/01/17.
- */
 public class GameField extends JPanel implements ActionListener{
     private final int SIZE = 320;
     private final int DOT_SIZE = 16;
@@ -44,7 +41,7 @@ public class GameField extends JPanel implements ActionListener{
             x[i] = 48 - i*DOT_SIZE;
             y[i] = 48;
         }
-        timer = new Timer(250,this);
+       timer = new Timer(250,this);
         timer.start();
         createApple();
     }
